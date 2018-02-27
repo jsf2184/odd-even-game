@@ -1,0 +1,16 @@
+<div class="panel panel-default">
+  <div class="panel-heading" #heading>GameControl</div>
+  <div class="panel-body">
+    <button class="btn btn-primary"
+            (click)="onStart()"
+            [disabled]=gameStarted>
+      StartGame
+    </button>
+
+    <button class="btn btn-danger"
+            (click)="onFinish()"
+            [disabled]=!gameStarted>
+      EndGame
+    </button>
+  </div>
+</div>
